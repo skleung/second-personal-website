@@ -178,6 +178,14 @@ a{
 	background-image: url('images/pubs.png');
 	background-repeat: no-repeat;
 }
+.genre{
+	background-image: url('images/genre.png');
+	background-repeat: no-repeat;
+}
+.piano{
+	background-image: url('images/piano.png');
+	background-repeat: no-repeat;
+}
 .indent{
 	margin-left: 20px;
 }
