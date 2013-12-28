@@ -12,16 +12,29 @@ $(window).resize(function() {
 });
 var researchFlag;
 var homeFlag;
-//source: http://papermashup.com/read-url-get-variables-withjavascript/
+var musicFlag;
 
 //researchFlag = getUrlVars()["researchFlag"];
 function toggleResearch(){
-	researchFlag=true;
-	homeFlag=false;
-	$('.home').hide();
-	//$('.home').fadeOut(1000);
-	$('.research').fadeIn(1200);
+	if (researchFlag !== true){
+		researchFlag=true;
+		homeFlag=false;
+		$('.home').hide();
+		//$('.home').fadeOut(1000);
+		$('.research').fadeIn(1200);
+	}
 }
+function toggleMusic(){
+	if (musicFlag !==true){
+		musicFlag = true;
+		homeFlag = false;
+		$('.home').hide();
+		//$('.home').fadeOut(1000);
+		$('.music').fadeIn(1200);
+	}
+}
+
+//source: http://papermashup.com/read-url-get-variables-withjavascript/
 function getUrlVars() {
   var vars = {};
   var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -29,8 +42,11 @@ function getUrlVars() {
   });
   if (vars["research"] === 'true'){
   	toggleResearch();
+  }else if (vars["music"] === 'true'){
+  	toggleMusic();
   }else{
   	researchFlag = false;
+  	musicFlag = false;
   }
 }
 function defineHeight(arr){
@@ -38,20 +54,22 @@ function defineHeight(arr){
 		$('#'+arr[i]) .css({'min-height': (($(window).height())) + 'px'});
 	}
 }
+getUrlVars();
 $(document).ready(function(){
-	getUrlVars();
-	$(".researchFlag").click(function(event){
-		if (researchFlag !== true){
-			toggleResearch();
-		}
+
+	$(".researchFlag").click(function(){
+		toggleResearch();
 	});
+	$(".musicFlag").click(function(){toggleMusic()});
 	$(".defaultFlag").click(function(event){
 		if (homeFlag !== true){
 			$('.research').hide();
+			$('.music').hide();
 			//$('.research').fadeOut(1000);
 			$('.home').fadeIn(1200);
 			homeFlag = true;
 			researchFlag = false;
+			musicFlag = false;
 		}
 	});
 
@@ -75,7 +93,7 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop: target_top}, 400);
 	});
 	//Auto-resize function
-	var arr = ["home","about","research","contact","classes", "research-home","researchExp","pubs"]
+	var arr = ["home","about","research","contact","classes", "research-home", "music-home","researchExp","pubs"]
 	for (var i=0; i<arr.length;i++){
 		$('#'+arr[i]) .css({'min-height': (($(window).height())) + 'px'});
 	}

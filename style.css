@@ -1,6 +1,6 @@
 h1{
 	text-transform: uppercase;	
-	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 	font-size: 50px;
 	line-height:100px;
 	margin: 0px;
@@ -8,6 +8,8 @@ h1{
 .title{
 	color: #fff;
 	font-size:110px;
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 1px 1px 0px #2e2e2e;
 }
 .tiny{
 	color: #000;
@@ -18,6 +20,7 @@ h2{
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
+	text-shadow: 1px 1px 0px #2e2e2e;
 }
 #nav{
 	color: #fff;
@@ -109,30 +112,48 @@ td li{
 .date{
 	width: 120px;
 }
-#home{
+#home, #research-home, #music-home{
 	background-image: url('images/scaled aurora.jpg');
 }
-#research-home{
-	background-color:#000;
-	background-image: url('images/gray aurora.jpg');
+/*#research-home{
+	background-image: url('images/gray aurora bg.jpg');
 	background-repeat:no-repeat;
 }
+#music-home{
+	background-image: url('images/gray aurora bg.jpg');
+	background-repeat:no-repeat;
+}*/
+
 a{
 	color:#000;
 	text-decoration: underline;
 }
 /*These colors are toggled by the flags*/
+.defaultFlag{
+	text-decoration: underline;
+	text-transform: none;
+}
+
 .researchFlag:hover{
-	color: #90EE90;
+	color: #90ee90;
+}
+.musicFlag:hover{
+	color: #f28500; /*tangerine*/
 }
 .red{
-	color: #BD2031; /*cardinal red*/
+	color: #bd2031; /*cardinal red*/
 }
 .green{
 	color: #228b22;
 }
+.orange{
+	color: #ff4500; /*orange-red*/
+}
 /* the following classes are initially hidden*/
 .research {
+	display:none;
+}
+.music{
 	display:none;
 }
 
