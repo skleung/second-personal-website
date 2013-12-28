@@ -1,0 +1,186 @@
+h1{
+	text-transform: uppercase;	
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	line-height:100px;
+	margin: 0px;
+}
+.title{
+	color: #fff;
+	font-size:110px;
+}
+.tiny{
+	color: #000;
+	font-size:12px;
+}
+h2{
+	display: block;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+#nav{
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	width: 100%;
+	left: 0;
+	background: #666;
+	height: 40px;
+	position:fixed;
+	top:0;
+	z-index: 1;
+}
+.content{
+	margin-top:100px;
+	margin-bottom: 100px;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+#nav ul{
+	margin: 0 0 0 70px;
+	padding: 15px 0 0 0;
+	width: 940px;
+}
+#nav li{
+	display: inline;
+	list-style-type: none;
+	margin-right: 30px;
+}
+#nav a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrapper-center {
+	overflow:hidden;
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrapper-left {
+	overflow:hidden;
+	width:960px;
+	margin-left:70px;
+}
+
+.large-wrapper-left {
+	overflow:hidden;
+	margin-right:120px;
+	margin-left:70px;
+}
+
+.welcome{
+	font-style: italic;
+}
+
+.welcome-text {
+	position: absolute;
+	font-size: 50px;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 0px;
+}
+body{
+	margin:0;
+	padding:0;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+p{
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	display:block;
+}
+td{
+	vertical-align: top;
+	padding-right:15px;
+	padding-left: 15px;
+}
+td li{
+	margin-left:30px;
+}
+.date{
+	width: 120px;
+}
+#home{
+	background-image: url('images/scaled aurora.jpg');
+}
+#research-home{
+	background-color:#000;
+	background-image: url('images/gray aurora.jpg');
+	background-repeat:no-repeat;
+}
+a{
+	color:#000;
+	text-decoration: underline;
+}
+/*These colors are toggled by the flags*/
+.researchFlag:hover{
+	color: #90EE90;
+}
+.red{
+	color: #BD2031; /*cardinal red*/
+}
+.green{
+	color: #228b22;
+}
+/* the following classes are initially hidden*/
+.research {
+	display:none;
+}
+
+/*these classes make up the about summary*/
+.about-summary li{
+	list-style-type: none;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+.about-summary ul{
+	padding:0;
+}
+.location{
+	background-image: url('images/place.png');
+	background-repeat: no-repeat;
+}
+.skills{
+	background-image: url('images/skills.png');
+	background-repeat: no-repeat;
+}
+.pubs{
+	background-image: url('images/pubs.png');
+	background-repeat: no-repeat;
+}
+.indent{
+	margin-left: 20px;
+}
+
+/*Contact form elements*/
+.error{
+	color: red;
+	display:none;
+}
+.success{
+	color: green;
+	display: none;
+}
+.form-input {
+font-family: Arial, Helvetica, sans-serif;
+background: #e9e9e9;
+font-size: 25px;
+border: 1px #CCC solid;
+resize: none;
+}
+.form-button {
+font-family: Arial, Helvetica, sans-serif;
+background: #e9e9e9;
+height: 30px;
+width: 100px;
+border: 1px #CCC solid;
+}
