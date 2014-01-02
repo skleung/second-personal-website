@@ -4,7 +4,7 @@ $(document).ready(function($) {
 		top: ($(window).height() - $('.welcome-text').height()) / 2 + 'px'
 	});	
 });
-$(window).resize(function() {
+$(window).resize(function($) {
 	$('.welcome-text').css({
 		left: ($(window).outerWidth() - $('.welcome-text').outerWidth()) / 2 + 'px',
 		top: ($(window).outerHeight() - $('.welcome-text').outerHeight()) / 2 + 'px'

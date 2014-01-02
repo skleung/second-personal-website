@@ -131,7 +131,7 @@ a{
 /*These colors are toggled by the flags*/
 .defaultFlag{
 	text-decoration: underline;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
 .researchFlag:hover{
@@ -176,6 +176,10 @@ a{
 }
 .pubs{
 	background-image: url('images/pubs.png');
+	background-repeat: no-repeat;
+}
+.study{
+	background-image: url('images/study.png');
 	background-repeat: no-repeat;
 }
 .genre{
