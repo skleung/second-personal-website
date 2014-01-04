@@ -112,7 +112,7 @@ td li{
 .date{
 	width: 120px;
 }
-#home, #research-home, #music-home{
+#home, #research-home, #music-home, #code-home{
 	background-image: url('images/scaled aurora.jpg');
 }
 /*#research-home{
@@ -140,6 +140,9 @@ a{
 .musicFlag:hover{
 	color: #f28500; /*tangerine*/
 }
+.codeFlag:hover{
+	color: #bd2031;
+}
 .red{
 	color: #bd2031; /*cardinal red*/
 }
@@ -154,6 +157,9 @@ a{
 	display:none;
 }
 .music{
+	display:none;
+}
+.code{
 	display:none;
 }
 
@@ -187,6 +193,10 @@ a{
 	background-repeat: no-repeat;
 }
 .piano{
+	background-image: url('images/piano.png');
+	background-repeat: no-repeat;
+}
+.cs-skills{
 	background-image: url('images/piano.png');
 	background-repeat: no-repeat;
 }
