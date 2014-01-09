@@ -1,0 +1,225 @@
+@cobalt: #0073CF; //cobalt blue
+@background: #293e6a; //navy
+@font-face{font-family:Idealist Sans;src:url("../fonts/Idealist Sans.ttf"),url("fonts/Idealist Sans.otf")};
+@font-face{font-family:norwester;src:url("fonts/norwester.ttf"),url("fonts/norwester.eot")};
+
+
+.body{
+	font-family: 'Source Sans Pro', helvetica, sans-serif;
+}
+strong{
+	color: @cobalt;
+	font-weight: bold;
+}
+.welcome-wrapper{
+	// background: url("../images/gray lego background.jpg");
+	// background-size: auto 100%;
+	background-color: @background;
+	// width: 60%;
+	margin: auto;
+	h2{
+		font-family: "Open Sans", sans-serif;
+		text-shadow: 1px 1px 0px #444;
+		color: #fff;
+	}
+	h1{
+		font-family: norwester;
+		font-size: 120px;
+		color: #fff;
+		text-transform: uppercase;
+		line-height: 50%;
+		text-shadow: 1px 1px 0px #2e2e2e;
+	}
+}
+.welcome-text{
+	width: 500px;
+	text-align: center;
+	position: absolute;
+}
+.header{
+	width: 100%;
+	height: 25%;
+	// background-color: #ccc; 
+	// background: url("../images/code.png"); 
+	// background-size: auto, 100%;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	h1{
+		font-family: norwester;
+	}
+}
+.header-text{
+	padding-top: 12%;
+	text-align: center;
+	// position:relative;
+	// width:600px;
+	// top: 50%;
+	// left: 50%;
+	// margin-left: -300px;
+	// margin-top: -300px;
+	h1{
+		color: #000;
+		font-size: 30px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		line-height: 80%;
+		strong{
+			color: #000;
+		}
+	}
+	h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+	}
+}
+.enter{
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	h2{
+		line-height: 50%;
+		margin-bottom: 10px;
+	}
+}
+a{
+	text-decoration: none;
+	color: @cobalt;
+}
+.project-box{
+	width: 45%;
+	height: 28%;
+	display: inline-block;
+	margin-right: 10px;
+	border: 4px solid #000;
+}
+.project-box#apamsa{
+	background-image: url('../images/apamsa/mainpage.png');
+	background-size: 100% 100%;
+}
+.project-box#personal{
+	background-image: url('../images/personal/mainpage.png');
+	background-size: 100% 100%;
+}
+.project-specs{
+	display:none;
+	a{
+		color: inherit;
+		text-decoration:none;
+	}
+	a:hover{
+		color: @cobalt;
+	}
+	img{
+		width: 48%;
+		height: 25%;
+		border: 2px solid #444;
+		display: block-inline;
+		margin-right: 4px;
+	}
+}
+.social{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	text-align: center;
+	margin-left: -50px;
+	width: 100px;
+	a:hover{
+		opacity: 0.88;
+	}
+	img{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.projects-text, .research-text, .publications-text, .contact-text{
+	display:none;
+}
+.section-icon{
+	position: relative;
+	top: 60px;
+	left: -45px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	width: 32px;
+	height: 32px;
+	opacity: .5;
+}
+.wrapper{
+	font-family: "Source Sans Pro";	
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;	
+	// box-shadow: 3px 3px 5px #888;
+}
+.about{
+	font-family: sans-serif;
+}
+.about-summary li{
+	list-style-type: none;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+.about-summary ul{
+	padding:0;
+}
+.location{
+	background-image: url('../images/place.png');
+	background-repeat: no-repeat;
+}
+.skills{
+	background-image: url('../images/skills.png');
+	background-repeat: no-repeat;
+}
+.study{
+	background-image: url('../images/study.png');
+	background-repeat: no-repeat;
+}
+#nav{
+	font-size: 18px;
+	height: 55px;
+	text-align: center;
+	font-family: 'Source Sans Pro', helvetica, sans-serif;
+	.nav-logo{
+  		margin-left: 15px;
+		height:100%;
+		width: 15%;
+		display:inline;
+		float:left;
+	}
+	a{
+		text-decoration: none;
+		color: inherit;
+	}
+	a:hover{
+		color: lighten(@cobalt, 10%);
+	}
+	ul{
+		padding-left: 12px;
+		padding-right:12px;
+	}
+	li{
+		color:@cobalt;
+		display:inline-block;
+		padding: 15px;
+	}
+}
+.footer{
+	width: 40%;
+	margin: auto;
+	margin-top: 20px;
+	.wrapper{
+		width: 100%;
+		text-align:center;
+		font-family: 'Source Sans Pro', helvetica, sans-serif;
+		a{
+			color: @cobalt;
+			text-decoration: none;
+		}
+	}
+}

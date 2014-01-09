@@ -1,3 +1,4 @@
-Sherman Leung
-12/22/2013
-This project is meant to practice incoporating javascript with html and css.
+Lab 1
+=====
+
+This lab introduces you to the serving of static content using node.js and Express. We'll also push and pull from GitHub, and publish to Heroku.
