@@ -1,4 +1,4 @@
-Lab 1
-=====
+skleung.github.io
+=================
 
-This lab introduces you to the serving of static content using node.js and Express. We'll also push and pull from GitHub, and publish to Heroku.
+My personal online portfolio. Built using JavaScript, HTML/CSS.

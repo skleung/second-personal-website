@@ -4,6 +4,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" />
 	<meta charset="utf-8">
 	<title>Sherman Leung's Online Portfolio</title>
 	</head>
@@ -66,8 +67,22 @@
 					<h1>Projects</h1>
 					<p>I recently declared CS, so this page is somewhat sparse. Check back every once in a while to see what I've been up to. </p>
 					<p> The following projects I put together over winter break 2013:</p>
+					<a href = "#sight" class = "scroll"><div class = "project-box" id = "sight"></div></a>
 					<a href = "#apamsa" class = "scroll"><div class = "project-box" id = "apamsa"></div></a>
-					<a href = "#personal" class = "scroll"><div class = "project-box" id = "personal"></a>
+					
+					<div class = "project-specs" id = "sight">
+						<h2><a href = "http://www.stanford.edu/~skleung/Sight">Sight </a></h2>
+						<p>Sight is a location-enabled application that allows users to open a site to find friends and coordinate events and meet-ups. It uses geolocation data from the Android API and the backend was built with PHP/MySQL. 
+						<p>This is my group's entry for Stanford's annual Hackathon hosted by <a href = "http://stanfordacm.com">Stanford ACM</a> and <a href = "http://bases.stanford.edu">Stanford BASES</a>. I was responsible for the front-end and my buddies work on the backend using PHP/MySQL. Unfortunately, the application is still a work in progress and isn't fully functional yet. Some features I learned whiel building the application:
+							<ul>
+								<li>Twitter Bootstrap</li>
+								<li>Google Maps API</li>
+								<li>AJAX calls</li>
+							</ul>
+						</p>
+						<a href = "images/sight/main.png" data-lightbox="sight" title="Homepage"><img src = "images/sight/main.png"></a>					
+						<a href = "images/sight/02.png" data-lightbox = "sight" title="Create a room form"><img src = "images/sight/02.png"></a>
+						<a href = "images/sight/03.png" data-lightbox = "sight" title="Interactive page to sign into a room"><img src = "images/sight/03.png"></a>
 					</div>
 					<div class = "project-specs" id = "apamsa">
 						<h2><a href = "http://www.stanford.edu/group/premed-apamsa/">Stanford Pre-med APAMSA </a></h2>
@@ -78,11 +93,12 @@
 								<li>Designing the logo for our chapter</li>
 							</ul>
 						</p>
-						<img src = "images/apamsa/mainpage.png">						
-						<img src = "images/apamsa/01.png">
-						<img src = "images/apamsa/02.png">
-						<img src = "images/apamsa/03.png">
+						<a href = "images/apamsa/mainpage.png" data-lightbox = "apamsa" title="Homepage"><img src = "images/apamsa/mainpage.png"></a>			
+						<a href = "images/apamsa/01.png" data-lightbox = "apamsa" title="About section"><img src = "images/apamsa/01.png"></a>					
+						<a href = "images/apamsa/02.png" data-lightbox = "apamsa" title="Interactive members section"><img src = "images/apamsa/02.png"></a>
+						<a href = "images/apamsa/03.png" data-lightbox = "apamsa" title="Email subscription drop-down"><img src = "images/apamsa/03.png"></a>
 					</div>
+					<a href = "#personal" class = "scroll"><div class = "project-box" id = "personal"></div></a>
 					<div class = "project-specs" id = "personal">
 						<h2><a href="http://skleung.github.io/first-website/">Personal Website</a> </h2>					
 						<p>My first foray into web design. I built a personal portfolio just to get some experience with HTML/CSS. I learned how to use cool features from JQuery and make things interactive. Some features I thought were cool:
@@ -92,10 +108,10 @@
 								<li>Having a single index.html</li>
 							</ul>
 						</p>
-						<img src = "images/personal/mainpage.png">						
-						<img src = "images/personal/02.png">
-						<img src = "images/personal/01.png">
-						<img src = "images/personal/03.png">							
+						<a href = "images/personal/mainpage.png" data-lightbox = "personal" title="Homepage"><img src = "images/personal/mainpage.png"></a>	
+						<a href = "images/personal/01.png" data-lightbox = "personal" title="Welcome section"><img src = "images/personal/01.png"></a>
+						<a href = "images/personal/02.png" data-lightbox = "personal" title="Toggling to the research section"><img src = "images/personal/02.png"></a>
+						<a href = "images/personal/03.png" data-lightbox = "personal" title="Contact Form"><img src = "images/personal/03.png"></a>							
 					</div>
 				</div>
 				<div class = "research-text">
@@ -111,22 +127,23 @@
 						<li><strong>Leung S</strong></br><i>Musical Model of Organic Compounds</i> </br>Stanford Undergraduate Research Journal <small>(under review)</small> <a href = "http://www.stanford.edu/group/journal/cgi-bin/wordpress/?p=1093">Research Spotlight</a></li>
 						<li>McLellan J, Chen M, <strong>Leung S</strong>, Graepel K, Du X, Yang Y, Zhou T, Baxa U, Yasuda E, Beaumont T, Kumar A, Modjarrad K, Zheng Z, Zhao M, Xia N, Kwong P, Graham B.</br><i>Structure of RSV Fusion Glycoprotein Trimer Bound to a Prefusion-Specific Neutralizing Antibody</i></br>
 						<a href = "http://www.sciencemag.org/content/340/6136/1113.abstract">Science</a>. 2013 May: 340:1113-1117.</li>
-						<li><strong>Leung S</strong>,Timofeeva O. </br><i>Simultaneous inhibition of SRC and STAT3 induces a stronger apoptotic response in prostate cancer cells</i> </br> <a href="jess.com">Journal of Experimental Secondary Science</a> 2011 Oct: 1:15-20.</li>
+						<li><strong>Leung S</strong>,Timofeeva O. </br><i>Simultaneous inhibition of SRC and STAT3 induces a stronger apoptotic response in prostate cancer cells</i> </br> <a href="http://www.jes2s.com/pdfs/src.pdf">Journal of Experimental Secondary Science</a> 2011 Oct: 1:15-20.</li>
 					</ol>
 				</div>
 				<div class = "contact-text">
 					<img src = "images/contact.png" class = "section-icon">
 					<h1>Contact</h1>
-					<p>You can contact me at <strong>me@shermanleung.com</strong></p>
+					<p>You can contact me at <strong>sherman@shermanleung.com</strong></p>
 				</div>
 			</div>
 		</div>
 		<div class = "footer">
 			<div class = "wrapper">
-				Last updated <strong>1/8/14</strong>. Copyright © 2014 Sherman Leung.
+				Last updated <strong>1/12/14</strong>. Copyright © 2014 Sherman Leung.
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
 	<script type="text/javascript" src="js/script.js" ></script>
 </html>
