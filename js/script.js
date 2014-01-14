@@ -1,5 +1,5 @@
 $(document).ready(function($) { 
-	// $('.welcome-wrapper') .css({'min-height': (($(window).height()) - $('.enter').height() ) + 'px'}); //allows space for the enter section
+	$('.welcome-wrapper') .css({'min-height': (($(window).height()) - $('.enter').height() ) + 'px'}); //allows space for the enter section
 	// $('#about').css({'min-height': $(window).height()+ 'px'}); //allows space for the footer section
 	// $('#projects').css({'min-height': (($(window).height()) - $('.footer').height() ) + 'px'}); //allows space for the footer section
 	$('.welcome-text').css({
