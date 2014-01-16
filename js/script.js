@@ -8,6 +8,8 @@ $(document).ready(function($) {
 	});
 });
 $(window).resize(function() {
+	$('.welcome-wrapper') .css({'min-height': (($(window).height()) - $('.enter').height() ) + 'px'}); //allows space for the enter section
+	$('#about').css({'min-height': $(window).height()+ 'px'}); //allows space for the footer section
 	$('.welcome-wrapper').css({
 		left: ($(window).outerWidth() - $('.welcome-text').outerWidth()) / 2 + 'px',
 		top: ($(window).outerHeight() - $('.welcome-text').outerHeight()) / 2 + 'px'
@@ -17,7 +19,7 @@ $(window).resize(function() {
 $(document).ready(function(){
 	//Toggle between projects and about section
 	$(".toggle").click(function(event){
-		var sectionArray = ["about", "projects", "research" , "publications", "contact"];
+		var sectionArray = ["about", "projects", "research" , "publications", "contact", "class"];
 		for (var i=0; i<sectionArray.length; i++){
 			$("."+sectionArray[i]+"-text").hide();
 		}
