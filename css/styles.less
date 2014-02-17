@@ -86,15 +86,79 @@ a{
 	color: @cobalt;
 }
 .project-box{
-	width: 45%;
-	height: 28%;
 	display: inline-block;
+	border: 4px solid #ccc;
+	img{
+		height: auto;
+		width: 100%;
+	}
+	width: 35%;
+}
+.project-description{
+	h1{
+		margin:0px;
+		font-size: 20px;
+	}
+	display: inline-block;
+	overflow:auto;
+	width: 55%;
+	p{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	a{
+		color: inherit;
+		text-decoration:none;
+	}
+	a:hover{
+		color: @cobalt;
+	}
+}
+.divider{
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-right: 10px;
-	border: 4px solid #000;
+	margin-left: 10px;
+	border-bottom: 1px dotted #D5D5D5;
+	width: 60%, auto;
+	height: 0;
+}
+.project-container{
+	width: 100%;
+	margin-top: 20px;
+	color: #444;
+	overflow: auto;
+}
+.project-specs{
+	display:none;
+	margin: 15px 0px 15px 0px;
+	ul{
+		margin-left:0px;
+		display: inline-block;
+		list-style: none;
+	}
+	li{
+		display: inline;
+		
+	}
+	img{
+		width: 23%;
+		height: auto;
+		border: 2px solid #444;
+		display: inline-block;
+		margin-right: 4px;
+	}
+}
+.left{
+	margin-right: 10px;
+	float: left;
+}
+.right{
+	margin-left: 10px;
+	float: right;
 }
 .project-box#apamsa{
-	background-image: url('../images/apamsa/mainpage.png');
-	background-size: 100% 100%;
+
 }
 .project-box#personal{
 	background-image: url('../images/personal/mainpage.png');
@@ -104,23 +168,11 @@ a{
 	background-image: url('../images/sight/main.png');
 	background-size: 100% 100%;
 }
-.project-specs{
-	padding-bottom: 15px;
-	display:none;
-	a{
-		color: inherit;
-		text-decoration:none;
-	}
-	a:hover{
-		color: @cobalt;
-	}
-	img{
-		width: 48%;
-		height: 25%;
-		border: 2px solid #444;
-		display: block-inline;
-		margin-right: 4px;
-	}
+.project-box#medic{
+	background-image: url('../images/medic/mainpage.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .social{
 	position: absolute;
@@ -137,9 +189,14 @@ a{
 		height: 40px;
 	}
 }
-
+.about-text{
+	width: 500px;
+	margin: auto;
+}
 .projects-text, .research-text, .publications-text, .contact-text, .class-text{
 	display:none;
+	width: 500px;
+	margin: auto;
 }
 table, td{
 	font-size: 14px;
@@ -162,15 +219,10 @@ table, td{
 }
 .wrapper{
 	font-family: "Source Sans Pro";	
-	width: 45%;
+	width: 600px;
 	margin-left: auto;
 	margin-right: auto;	
 	// box-shadow: 3px 3px 5px #888;
-}
-#about{
-	font-family: sans-serif;
-	min-height: 100%;	
-	_height: 100%;
 }
 .about-summary li{
 	list-style-type: none;

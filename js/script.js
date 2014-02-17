@@ -35,11 +35,11 @@ $(document).ready(function(){
 		var projectId = this.id;
 		if (projectId === curProject){
 			curProject = ""; //resets curProject so it can slide down again
-			$('.project-specs#'+projectId).slideUp();
+			$('.project-specs#'+projectId).fadeOut();
 		}else{
 			curProject = projectId;
 			$('.project-specs').hide();
-			$('.project-specs#'+projectId).slideDown();
+			$('.project-specs#'+projectId).fadeIn();
 		}
 	});
 	//Scrolling animation

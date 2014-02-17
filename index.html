@@ -60,64 +60,73 @@
  							<li class = "pubs" title="classes"><a href = "#classes"> See the classes I've taken below</a></li>
 					</ul>
 					</div> -->
-					<p>Front-end developer, jazz pianist, and researcher, I'm a sophomore at Stanford University majoring in Computer Science with a concentration in Human-Computer Interaction. I'm interested in mobile health applications and building web applications. </p>
-					<p>I started building my front-end portfolio over Winter Break 2013, and I'm taking classes this quarter to pick up some more back-end knowledge this quarter so I can start building my first applications</p>
+					<p>Front-end developer, jazz pianist, and researcher, I'm a sophomore at Stanford University majoring in Computer Science with a concentration in Human-Computer Interaction. I'm passionate about web design, mobile health applications, and building web applications. </p>
+					<p>Check out some of the <a href = "#about" class = "toggle" id="projects">projects</a> that I've been working on</p>
 				</div>
 				<div class = "projects-text">
-					<img src = "images/projects.png" class = "section-icon">
-					<h1>Projects</h1>
-					<p>I recently declared CS, so this page is somewhat sparse. Check back every once in a while to see what I've been up to, or see the <a href = "#class" class = "toggle" id = "class">classes</a> that I've taken. </p>
-					<a href = "#sight" class = "scroll"><div class = "project-box" id = "sight"></div></a>
-					<a href = "#apamsa" class = "scroll"><div class = "project-box" id = "apamsa"></div></a>
-					
-					<div class = "project-specs" id = "sight">
-						<h2><a href = "http://www.stanford.edu/~skleung/sight">Sight </a></h2>
-						<p>Sight is a location-enabled application that allows users to open a site to find friends and coordinate events and meet-ups. It uses geolocation data from the Android API and the backend was built with PHP/MySQL. 
-						<p>This is my group's entry for Stanford's annual Hackathon hosted by <a href = "http://stanfordacm.com">Stanford ACM</a> and <a href = "http://bases.stanford.edu">Stanford BASES</a>. I was responsible for the front-end and my buddies work on the backend using PHP/MySQL. 
-						<p>Unfortunately, the application is still a work in progress and isn't fully functional yet. Some features I learned while building the application:</p>
-							<ul>
-								<li>Twitter Bootstrap</li>
-								<li>Google Maps API</li>
-								<li>AJAX calls</li>
-							</ul>
-						</p>
-						<a href = "images/sight/main.png" data-lightbox="sight" title="Homepage"><img src = "images/sight/main.png"></a>					
-						<a href = "images/sight/02.png" data-lightbox = "sight" title="Create a room form"><img src = "images/sight/02.png"></a>
-						<a href = "images/sight/03.png" data-lightbox = "sight" title="Interactive page to sign into a room"><img src = "images/sight/03.png"></a>
+					<img src = "images/projects.png" class = "section-icon"/>
+					<h1> Projects</h1>
+					<!-- Medic Mobile -->
+					<div class = "project-container">
+						<div class = "project-box left" id = "medic" ><a href = "#medic" class = "scroll" ><img src = "images/medic/mainpage.png"/></a></div>
+						<div class = "project-description" id = "right">
+							<h1><a href = "https://sites.google.com/site/stanfordesw/projects">Medic Mobile</a></h1>
+							<p>I'm part of the <a href = "esw.stanford.edu/">ESW</a> software team, working directly with product managers at Medic Mobile and four other team members to develop a plug-and-play environment for Medic Mobile's platform and couchapps on the Raspberry Pi. </p>
+						</div>
 					</div>
-					<div class = "project-specs" id = "apamsa">
-						<h2><a href = "http://www.stanford.edu/group/premed-apamsa/">Stanford Pre-med APAMSA </a></h2>
-						<p>I'm part of a new premed society on campus, and I wanted to design a website to get our name out there. I used LESS, JQuery, and a bit of PHP to get the email list feature working. Some features I had in mind when I designed it:
-							<ul>
-								<li>Docking navbar</li>
-								<li>Interactive members section</li>
-								<li>Designing the logo for our chapter</li>
-							</ul>
-						</p>
-						<a href = "images/apamsa/mainpage.png" data-lightbox = "apamsa" title="Homepage"><img src = "images/apamsa/mainpage.png"></a>			
-						<a href = "images/apamsa/01.png" data-lightbox = "apamsa" title="About section"><img src = "images/apamsa/01.png"></a>					
-						<a href = "images/apamsa/02.png" data-lightbox = "apamsa" title="Interactive members section"><img src = "images/apamsa/02.png"></a>
-						<a href = "images/apamsa/03.png" data-lightbox = "apamsa" title="Email subscription drop-down"><img src = "images/apamsa/03.png"></a>
+					<div class = "divider">	</div>
+					<!-- SSB Conference Webpage -->
+					<div class = "project-container">
+						<div class = "project-box right" id = "human20" ><a href = "http://skleung.github.io/human-2.0-ssb-2014" class = "scroll" ><img src = "images/human20/square.png"/></a></div>
+						<div class = "project-description left" >
+							<h1><a href = "http://skleung.github.io/human-2.0-ssb-2014">SSB Conference Website</a></h1>
+							<p>This is the landing page for the annual Stanford Student Biodesign 2014 conference. I created interfaces for registration and sponsorship. Used Twitter bootstrap for web design, and InkScape for branding. </p>
+							
+						</div>
 					</div>
-					<a href = "#personal" class = "scroll"><div class = "project-box" id = "personal"></div></a>
+					<div class = "divider"></div>
+					<!-- APAMSA -->
+					<div class = "project-container">
+						<div class = "project-box left" id = "apamsa" ><a href = "#apamsa" class = "scroll" ><img src = "images/apamsa/square.png"/></a></div>
+						<div class = "project-description" id = "right">
+							<h1><a href = "http://skleung.github.io/premed-apamsa.stanford.edu/">Premed APAMSA</a></h1>
+							<p>I designed a one-page, scroll-down webpage for Stanford premed APAMSA. It has a docking navbar, an interactive members section, and a subscription dropdown link to the email list.</p>
+						</div>
+					</div>
+					<!-- APAMSA Specs -->
+					<div class = "project-container">
+						<div class = "project-specs" id = "apamsa">
+							<ul>
+							<li style = "display: none"><a href = "images/apamsa/mainpage.png" data-lightbox = "apamsa" title="Homepage"><img src = "images/apamsa/mainpage.png"></a></li>
+							<li><a href = "images/apamsa/01.png" data-lightbox = "apamsa" title="About section"><img src = "images/apamsa/01.png"></a></li>
+							<li><a href = "images/apamsa/02.png" data-lightbox = "apamsa" title="Interactive members section"><img src = "images/apamsa/02.png"></a></li>
+							<li><a href = "images/apamsa/03.png" data-lightbox = "apamsa" title="Email subscription drop-down"><img src = "images/apamsa/03.png"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class = "divider"></div>
+					<!-- First website -->
+					<div class = "project-container">
+						<div class = "project-box right" id = "personal" ><a href = "#personal" class = "scroll" ><img src = "images/personal/square.png"/></a></div>
+						<div class = "project-description left" >
+							<h1><a href = "http://skleung.github.io/first-website">First Online Portfolio</a></h1>
+							<p>My first foray into web design designed over Winter Break 2013. It features dynamic scrolling, toggling sections and colors, and a message form.</p>
+						</div>
+					</div>
+					<!-- Personal Specs -->
 					<div class = "project-specs" id = "personal">
-						<h2><a href="http://skleung.github.io/first-website/">Personal Website</a> </h2>					
-						<p>My first foray into web design. I built a personal portfolio to get some experience with HTML/CSS. I learned how to use cool features from JQuery and make things interactive. Some features I thought were cool:
-							<ul>
-								<li>Toggling sections/colors</li>
-								<li>Dynamic scrolling</li>
-								<li>Having a single index.html</li>
-							</ul>
-						</p>
-						<a href = "images/personal/mainpage.png" data-lightbox = "personal" title="Homepage"><img src = "images/personal/mainpage.png"></a>	
-						<a href = "images/personal/01.png" data-lightbox = "personal" title="Welcome section"><img src = "images/personal/01.png"></a>
-						<a href = "images/personal/02.png" data-lightbox = "personal" title="Toggling to the research section"><img src = "images/personal/02.png"></a>
-						<a href = "images/personal/03.png" data-lightbox = "personal" title="Contact Form"><img src = "images/personal/03.png"></a>							
+						<ul>
+						<li style = "display: none"><a href = "images/personal/mainpage.png" data-lightbox = "personal" title="Homepage"><img src = "images/personal/mainpage.png"></a></li>
+						<li><a href = "images/personal/01.png" data-lightbox = "personal" title="About section"><img src = "images/personal/01.png"></a></li>
+						<li><a href = "images/personal/02.png" data-lightbox = "personal" title="Interactive members section"><img src = "images/personal/02.png"></a></li>
+						<li><a href = "images/personal/03.png" data-lightbox = "personal" title="Email subscription drop-down"><img src = "images/personal/03.png"></a></li>
+						</ul>
 					</div>
 				</div>
 				<div class = "class-text">
 					<img src = "images/pubs.png" class = "section-icon">
 					<h1>Coursework</h1>
+					<p>Academically, I'm a CS major on the HCI track minoring in Chemistry. I'm also fulfilling my premed requirements as an aspiring physician.</p>
 					<table>
 						<tr>
 							<td class="date">Winter 2014</td>
@@ -151,7 +160,7 @@
 					<img src = "images/pubs.png" class = "section-icon">
 					<h1>Pubs</h1>
 					<ol>
-						<li><strong>Leung S</strong></br><i>Musical Model of Organic Compounds</i> </br>Stanford Undergraduate Research Journal <small>(under review)</small> <a href = "http://www.stanford.edu/group/journal/cgi-bin/wordpress/?p=1093">Research Spotlight</a></li>
+						<li><strong>Leung S</strong></br><i>Musical Model of Organic Compounds</i> <small>(under review)</small></br>Stanford Undergraduate Research Journal  <a href = "http://www.stanford.edu/group/journal/cgi-bin/wordpress/?p=1093">Research Spotlight</a></li>
 						<li>McLellan J, Chen M, <strong>Leung S</strong>, Graepel K, Du X, Yang Y, Zhou T, Baxa U, Yasuda E, Beaumont T, Kumar A, Modjarrad K, Zheng Z, Zhao M, Xia N, Kwong P, Graham B.</br><i>Structure of RSV Fusion Glycoprotein Trimer Bound to a Prefusion-Specific Neutralizing Antibody</i></br>
 						<a href = "http://www.sciencemag.org/content/340/6136/1113.abstract">Science</a>. 2013 May: 340:1113-1117.</li>
 						<li><strong>Leung S</strong>,Timofeeva O. </br><i>Simultaneous inhibition of SRC and STAT3 induces a stronger apoptotic response in prostate cancer cells</i> </br> <a href="http://www.jes2s.com/pdfs/src.pdf">Journal of Experimental Secondary Science</a> 2011 Oct: 1:15-20.</li>
