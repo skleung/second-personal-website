@@ -98,6 +98,9 @@ a{
 	h1{
 		margin:0px;
 		font-size: 20px;
+		a{
+			color: inherit;
+		}
 	}
 	display: inline-block;
 	overflow:auto;
@@ -107,11 +110,12 @@ a{
 		margin-bottom: 5px;
 	}
 	a{
-		color: inherit;
+		font-weight: bold;
+		color: @cobalt;
 		text-decoration:none;
 	}
 	a:hover{
-		color: @cobalt;
+		text-decoration: underline;
 	}
 }
 .divider{
